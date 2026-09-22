@@ -3,3 +3,4 @@
 - I Build the frontend with package.gson file
 - Sept 7: I completed my Electronics Lab Manual
 - Sept 20: Todayy is my Birthday 🎂
+- Sept 22: I started to build Agriguard AI
