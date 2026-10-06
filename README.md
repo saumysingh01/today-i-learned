@@ -29,6 +29,9 @@ Welcome to my development log! This repository tracks my ongoing engineering pro
 * **Sept 29** &middot; 📚 **Exam Preparation**  
   Currently dedicated to final revisions for tomorrow's **Electronics & Communication Exam**.
 
+* **Oct 07** &middot; 📚 **Building Smart-Attendance-System**  
+  Creating fully funclional Smart-Attendance-System
+
 ---
 
 ### 🛠️ Current Tech Stack & Tools
