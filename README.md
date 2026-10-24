@@ -60,6 +60,7 @@ This repository is my personal developer diary — a place where I document ever
 | **Oct 20** | 🧩 DSA | Studied **Linked Lists** — singly and doubly linked. Implemented insert, delete, and reverse operations in C. Visualized with pointer diagrams. |
 | **Oct 22** | 🐛 Debugging | Battled multiple errors in the **AI SaaS project**. Traced a `CORS policy` issue across the API layer and fixed an environment variable leak in the Next.js config. Progress is progress, even when it's all red. |
 | **Oct 23** | 🤖 AI SaaS | Working on the **AI SaaS platform** — integrating OpenAI API endpoints, hitting rate limit errors, debugging Prisma schema migration conflicts, and fixing a broken Stripe webhook handler. Error by error, the product is taking shape. |
+| **Oct 25** | 📝 Academics | Dedicated the day to completing **college assignments** — organized, documented, and tracked all pending work directly on **GitHub**. Practiced using Git for academic task management: structured commits, clear descriptions, and version-controlled submissions. Productivity level: maximum. |
 
 ---
 
@@ -113,7 +114,7 @@ Tracking the foundational concepts I'm learning in parallel with real-world proj
 ## 📈 Stats
 
 ```
-📆 Days Logged     : 20+
+📆 Days Logged     : 21+
 🐛 Bugs Squashed   : Lost count (and sanity)
 💡 Concepts Learned: Growing daily
 ☕ Coffee Consumed  : Immeasurable
