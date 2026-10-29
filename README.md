@@ -1,34 +1,96 @@
-# 🧠 Today I Learned — Dev Journal
+<div align="center">
 
-> *A living record of my journey through code, crashes, concepts, and curiosity.*
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Today%20I%20Learned&fontSize=60&fontColor=fff&animation=twinkling&fontAlignY=35&desc=A%20Dev%20Journal%20by%20Saumy&descAlignY=55&descSize=18" width="100%"/>
 
-[![Status](https://img.shields.io/badge/status-actively%20learning-brightgreen?style=flat-square)](https://github.com)
-[![Course](https://img.shields.io/badge/degree-B.Tech%20CSE%20Sem%201-blue?style=flat-square)](https://github.com)
-[![Focus](https://img.shields.io/badge/current%20project-AI%20SaaS-orange?style=flat-square)](https://github.com)
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=B.Tech+CSE+Sem+1+%F0%9F%93%9A;Building+AI+SaaS+from+scratch+%F0%9F%A4%96;Debugging+at+midnight+%F0%9F%90%9B;Shipping+real+products+%F0%9F%9A%80;Learning+every+single+day+%E2%9C%A8)](https://git.io/typing-svg)
+
+<br/>
+
+[![Status](https://img.shields.io/badge/status-actively%20learning-brightgreen?style=for-the-badge&logo=github)](https://github.com)
+[![Course](https://img.shields.io/badge/B.Tech%20CSE-Sem%201-blue?style=for-the-badge&logo=academia)](https://github.com)
+[![Focus](https://img.shields.io/badge/current-AI%20SaaS-orange?style=for-the-badge&logo=openai)](https://github.com)
+[![Streak](https://img.shields.io/badge/days%20logged-22%2B-red?style=for-the-badge&logo=fire)](https://github.com)
+
+</div>
 
 ---
 
 ## 👨‍💻 About This Journal
 
-This repository is my personal developer diary — a place where I document every meaningful thing I build, break, debug, and learn. From academic fundamentals in my **B.Tech CSE (1st Semester)** to real-world AI application development, this log captures the full picture of my growth as an engineer.
+> *A living record of my journey through code, crashes, concepts, and curiosity.*
+
+This repository is my personal developer diary — documenting every meaningful thing I build, break, debug, and learn. From academic fundamentals in **B.Tech CSE (Sem 1)** to real-world AI application development, this log captures the full picture of growth as an engineer.
 
 > *"Every expert was once a beginner who refused to give up."*
 
 ---
 
+## 🗺️ The Learning Journey — Flowchart
+
+```mermaid
+flowchart TD
+    A([🎓 Started B.Tech CSE Sem 1]) --> B[📄 HTML & CSS Basics]
+    B --> C[💡 C Programming & Pointers]
+    C --> D[📐 DSA — Arrays & Linked Lists]
+    D --> E[🔢 Boolean Algebra & Logic Gates]
+    E --> F[🗃️ SQL & Databases]
+    F --> G[🖥️ OS — Process Scheduling]
+
+    A --> H[🤖 RAG AI Project]
+    H --> I[🌾 AgriGuard AI]
+    I --> J[🧑‍🏫 Smart Attendance System]
+    J --> K[🔐 JWT Auth Integration]
+    K --> L[☁️ AWS S3 & IAM]
+    L --> M[📦 Node.js & npm Deep Dive]
+    M --> N[🤖 AI SaaS Platform]
+
+    N --> O{🐛 Bug Battles}
+    O -->|CORS Fix| P[✅ Fixed]
+    O -->|Stripe Webhook| P
+    O -->|Prisma Migration| P
+    O -->|OpenAI Key Leak| P
+
+    G --> Q([🚀 Still going...])
+    P --> Q
+
+    style A fill:#4f46e5,color:#fff
+    style Q fill:#059669,color:#fff
+    style O fill:#dc2626,color:#fff
+    style P fill:#16a34a,color:#fff
+    style N fill:#ea580c,color:#fff
+```
+
+---
+
 ## 🚀 Current Focus
 
+```mermaid
+graph LR
+    subgraph AI_SaaS ["🤖 AI SaaS Platform"]
+        A[Next.js Frontend] --> B[OpenAI API]
+        A --> C[Stripe Payments]
+        A --> D[Prisma ORM]
+        D --> E[(PostgreSQL)]
+        B --> F[AI Features]
+        C --> G[Webhooks]
+    end
+
+    style AI_SaaS fill:#1e1b4b,color:#fff
+    style A fill:#3b82f6,color:#fff
+    style B fill:#10b981,color:#fff
+    style C fill:#8b5cf6,color:#fff
+    style D fill:#f59e0b,color:#fff
+    style E fill:#ef4444,color:#fff
 ```
-📦 Project: AI SaaS Platform
-⚙️  Stack:   Next.js · TypeScript · Prisma · Stripe · OpenAI API · Tailwind CSS
-🔥 Phase:   Active Development (Debugging & Feature Integration)
-```
+
+**Stack:** `Next.js` · `TypeScript` · `Prisma` · `Stripe` · `OpenAI API` · `Tailwind CSS`
+**Phase:** 🔥 Active Development — Debugging & Feature Integration
 
 ---
 
 ## 📅 Development Timeline
-
----
 
 ### 🌱 September 2026
 
@@ -67,68 +129,117 @@ This repository is my personal developer diary — a place where I document ever
 
 ---
 
-## 🐛 Errors I Fought This Week *(Oct 23)*
+## 🐛 Errors I Fought — Debug Log
 
 > *The best developers aren't the ones who write perfect code — they're the ones who debug fearlessly.*
 
-- `PrismaClientKnownRequestError` — Foreign key constraint failed on `userId` field during user seeding.
-- `Error: Invalid API Key` — OpenAI key was not loading from `.env.local` due to a Next.js server/client boundary issue.
-- `CORSError: No 'Access-Control-Allow-Origin'` — Fixed by adding proper headers in `next.config.js` and updating API route middleware.
-- `Stripe WebhookError: No signatures found matching the expected signature` — Was using raw body parsing incorrectly; resolved by disabling `bodyParser` on the webhook route.
-- `next/font` hydration mismatch — Class name inconsistency between server and client render. Fixed by wrapping font class in `suppressHydrationWarning`.
+```mermaid
+graph TD
+    BUG1["❌ PrismaClientKnownRequestError\nForeign key constraint on userId"] -->|Fixed by seeding in correct order| FIXED1["✅ Resolved"]
+    BUG2["❌ Error: Invalid API Key\nOpenAI key not loading from .env.local"] -->|Fixed server/client boundary| FIXED2["✅ Resolved"]
+    BUG3["❌ CORSError: No Access-Control-Allow-Origin\nAPI layer blocked"] -->|Added headers in next.config.js| FIXED3["✅ Resolved"]
+    BUG4["❌ Stripe WebhookError\nSignature mismatch"] -->|Disabled bodyParser on webhook route| FIXED4["✅ Resolved"]
+    BUG5["❌ next/font Hydration Mismatch\nClass name SSR vs CSR inconsistency"] -->|Added suppressHydrationWarning| FIXED5["✅ Resolved"]
+
+    style BUG1 fill:#7f1d1d,color:#fff
+    style BUG2 fill:#7f1d1d,color:#fff
+    style BUG3 fill:#7f1d1d,color:#fff
+    style BUG4 fill:#7f1d1d,color:#fff
+    style BUG5 fill:#7f1d1d,color:#fff
+    style FIXED1 fill:#14532d,color:#fff
+    style FIXED2 fill:#14532d,color:#fff
+    style FIXED3 fill:#14532d,color:#fff
+    style FIXED4 fill:#14532d,color:#fff
+    style FIXED5 fill:#14532d,color:#fff
+```
 
 ---
 
 ## 🛠️ Tech Stack & Tools
 
-```
-🧠 AI/ML       → OpenAI API, RAG Frameworks, Vector Embeddings, LangChain
-⚡ Frontend    → Next.js, React, TypeScript, Tailwind CSS
-🔧 Backend     → Node.js, Prisma ORM, REST APIs
-🗄️ Database    → PostgreSQL, MySQL (SQL fundamentals)
-☁️ Cloud       → AWS S3, IAM basics
-💳 Payments    → Stripe (Webhooks, Checkout Sessions)
-🔐 Auth        → JWT, NextAuth.js
-📐 CS Basics   → C Programming, Data Structures, Boolean Algebra, OS Concepts
-🛠️ DevTools    → Git, GitHub, VS Code, Postman, Vercel
-```
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
 
 ---
 
 ## 📚 B.Tech CSE Sem 1 — Concepts Log
 
-Tracking the foundational concepts I'm learning in parallel with real-world projects:
+```mermaid
+pie title CSE Sem 1 — Progress
+    "Completed" : 8
+    "Remaining" : 4
+```
 
-- [x] Number Systems (Binary, Octal, Hex)
-- [x] Boolean Algebra & Logic Gates
-- [x] C Programming — Variables, Loops, Functions
-- [x] C Programming — Pointers & Memory
-- [x] Arrays & Time Complexity (Big O)
-- [x] Linked Lists (Singly & Doubly)
-- [x] Process Scheduling (FCFS, SJF, Round Robin)
-- [x] SQL Basics (DDL, DML, Joins)
-- [ ] Stacks & Queues
-- [ ] Trees & Binary Search Trees
-- [ ] Computer Networks — OSI Model
-- [ ] DBMS — Transactions & ACID Properties
+| Concept | Status | Area |
+|---------|--------|------|
+| Number Systems (Binary, Octal, Hex) | ✅ Done | Digital Electronics |
+| Boolean Algebra & Logic Gates | ✅ Done | Digital Electronics |
+| C Programming — Variables, Loops, Functions | ✅ Done | Programming |
+| C Programming — Pointers & Memory | ✅ Done | Programming |
+| Arrays & Time Complexity (Big O) | ✅ Done | DSA |
+| Linked Lists (Singly & Doubly) | ✅ Done | DSA |
+| Process Scheduling (FCFS, SJF, Round Robin) | ✅ Done | OS |
+| SQL Basics (DDL, DML, Joins) | ✅ Done | DBMS |
+| Stacks & Queues | ⏳ Next | DSA |
+| Trees & Binary Search Trees | ⏳ Soon | DSA |
+| Computer Networks — OSI Model | ⏳ Soon | Networks |
+| DBMS — Transactions & ACID Properties | ⏳ Soon | DBMS |
+
+**Progress: `████████░░░░` 67%**
 
 ---
 
 ## 📈 Stats
 
-```
-📆 Days Logged     : 22+
-🐛 Bugs Squashed   : Lost count (and sanity)
-💡 Concepts Learned: Growing daily
-☕ Coffee Consumed  : Immeasurable
+<div align="center">
+
+| 📆 Days Logged | 🐛 Bugs Squashed | 💡 Concepts Learned | 🚀 Projects Shipped | ☕ Coffee |
+|:-:|:-:|:-:|:-:|:-:|
+| **22+** | **Lost count** | **Growing daily** | **3+** | **Immeasurable** |
+
+</div>
+
+---
+
+## 🧭 What's Next
+
+```mermaid
+timeline
+    title Roadmap — Nov & Beyond
+    November 2026 : Stacks & Queues in DSA
+                  : Trees & BST
+                  : AI SaaS MVP Launch
+    December 2026 : OSI Model & Networking
+                  : ACID & Transactions
+                  : Semester Exams
+    2027          : Sem 2 begins
+                : New projects. Same grind.
 ```
 
 ---
 
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
+
 *"It's not about having time. It's about making time."*
 
-**— Built with curiosity, caffeine, and compiler errors ☕🔥**
+**Built with curiosity, caffeine, and compiler errors ☕🔥**
 
 </div>
